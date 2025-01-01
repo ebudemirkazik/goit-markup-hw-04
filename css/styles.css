@@ -503,10 +503,8 @@ footer .container .social-icon-footer .social-list .social-link .s-link:focus {
   background-color: #31d0aa;
 }
 
-
 footer .container .social-icon-footer .social-list .social-link .s-link .icon {
-  width: 24px;
-  height: 24px;
+  
   fill: #f4f4fd;
 }
 
