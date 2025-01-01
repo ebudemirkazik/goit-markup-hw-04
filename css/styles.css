@@ -228,13 +228,13 @@ address .address-list .address-link:focus {
 
 /* HERO SECTİON */
 .hero-image {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2E2F42B2;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 
@@ -267,6 +267,7 @@ address .address-list .address-link:focus {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-image .hero-button:hover {
   background-color: #404bbf;
@@ -504,7 +505,7 @@ footer .container .social-icon-footer .social-list .social-link .s-link:focus {
 }
 
 footer .container .social-icon-footer .social-list .social-link .s-link .icon {
-  
+
   fill: #f4f4fd;
 }
 
