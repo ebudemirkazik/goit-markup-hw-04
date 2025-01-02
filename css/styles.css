@@ -501,9 +501,7 @@ section .portfolio-p {
 section .container .portfolio-list .img-div .img-p:hover {
   transform: translateY(0%);
 }
-section .container .portfolio-list .portfolio:hover {
-  transform: translateY(0%);
-}
+
 
 /* our-portfolio */
 
