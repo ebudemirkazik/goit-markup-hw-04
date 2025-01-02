@@ -359,7 +359,6 @@ section .list-items .list-items-p {
   gap: 24px;
 }
 
-
 section .our-teams {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
@@ -372,7 +371,7 @@ section .our-teams {
 }
 section .container .social-icon {
   padding: 32px 0;
-  margin-top: -24px;
+  
 }
 section .container .social-icon .social-media {
   display: flex;
@@ -406,11 +405,8 @@ section .container .social-icon .social-media .s-link .media-link .team-svg {
 
 section .container .our-team-list .our-teams .team-member{
   margin-top: 32px;
-  margin-bottom: 8px;
+  margin-bottom: -24px;
 }
-
-
-
 
 section .ourteam-header {
   font-weight: 500;
