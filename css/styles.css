@@ -307,14 +307,10 @@ section .list-items .list-icon {
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color: #f3f3fd;
+  background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
-}
-section .list-items .list-icon .icon-antenna {
-  width: 64px;
-  height: 64px;
 }
 
 
@@ -359,8 +355,8 @@ section .list-items .list-items-p {
 .our-team .container .our-team-list {
   display: flex;
   gap: 24px;
-  
 }
+
 
 section .our-teams {
   background-color: #ffffff;
