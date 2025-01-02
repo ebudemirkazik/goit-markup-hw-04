@@ -194,7 +194,6 @@ header nav .nav-items .nav-link {
 
 }
 
-
 header nav .nav-items .nav-link:hover {
   color: #404bbf;
 }
@@ -216,6 +215,7 @@ address .address-list .address-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 address .address-list .address-link:hover {
   color: #404bbf;
@@ -343,6 +343,8 @@ section .list-items .list-items-p {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+
+
 .our-team .our-team-header {
   font-size: 36px;
   line-height: 1.11;
@@ -367,25 +369,46 @@ section .our-teams {
   justify-content: center;
   align-items: center;
 }
+section .container .social-icon {
+  padding: 32px 0;
+  margin-top: -24px;
+}
+section .container .social-icon .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+section .container .social-icon .social-media .s-link {
+  width: 40px;
+  height: 40px;
+}
+section .container .social-icon .social-media .s-link .media-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .social-icon .social-media .s-link .media-link:hover {
+  background-color: #404bbf;
+}
+section .container .social-icon .social-media .s-link .media-link:focus {
+  background-color: #404bbf;
+}
+
+section .container .social-icon .social-media .s-link .media-link .team-svg {
+  fill: #f4f4fd;
+}
 
 section .container .our-team-list .our-teams .team-member{
   margin-top: 32px;
   margin-bottom: 8px;
 }
 
-section .our-team-list .our-teams .social-icon {
-  width: 232px;
-  height: 40px;
-  display: flex;
-  margin-top: 8px;
-  margin-bottom: 32px;
-  justify-content: center;
-  gap: 24px;
-}
-section .our-team-list .our-teams .social-icon .icon{
- width: 40px;
- height: 40px;
-}
+
+
 
 section .ourteam-header {
   font-weight: 500;
