@@ -229,12 +229,14 @@ address .address-list .address-link:focus {
 /* HERO SECTİON */
 .hero-image {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #2E2F42B2;
   padding: 188px 0;
   max-width: 1440px;
+  margin-left: 156px;
 }
 
 
@@ -242,6 +244,7 @@ address .address-list .address-link:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
 .hero-image .hero-header {
   font-size: 56px;
