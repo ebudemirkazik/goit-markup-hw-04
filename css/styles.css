@@ -77,7 +77,27 @@ header nav .nav-items .nav-link {
   padding: 24px 0;
 }
 
-header nav .nav-items .nav-link:hover , .nav-link:focus {
+header nav .nav-items .nav-link.active {
+  position: relative;
+  color: #404bbf;
+}
+header nav .nav-items .nav-link.active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+
+header nav .nav-items .nav-link:hover {
+  color: #404bbf;
+}
+header nav .nav-items .nav-link:focus {
   color: #404bbf;
 }
 
@@ -269,10 +289,12 @@ section .container .social-media .s-link .media-link {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-section .container .social-media .s-link .media-link:hover , .media-link:focus {
+section .container .social-media .s-link .media-link:hover {
   background-color: #404bbf;
 }
-
+section .container .social-media .s-link .media-link:focus {
+  background-color: #404bbf;
+}
 
 section .container .social-media .s-link .media-link .team-svg {
   fill: #f4f4fd;
@@ -424,7 +446,10 @@ footer .container .social-icon-footer .social-list .social-link a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer .container .social-icon-footer .social-list .social-link .s-link:hover, .s-link:focus {
+footer .container .social-icon-footer .social-list .social-link .s-link:hover {
+  background-color: #31d0aa;
+}
+footer .container .social-icon-footer .social-list .social-link .s-link:focus {
   background-color: #31d0aa;
 }
 
