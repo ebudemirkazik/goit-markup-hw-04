@@ -1,132 +1,23 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*{
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+
+ol, ul {
+  list-style: none;
 }
-ul {
-  list-style-type: none;
-}
-a {
+
+a{
   text-decoration: none;
+  color: inherit;
 }
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+img{
+ display: block;
 }
 
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
-img {
-  display: block;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -169,13 +60,6 @@ header nav .header-logo-link {
   margin-right: 76px;
 }
 
-header nav .nav-items .hover {
-  border: 4px solid #404BBF;
-  border-radius: 4px;
-  align-items: center;
-  
-}
-
 header nav .header-logo-link .logo-2 {
   color: #2e2f42;
 }
@@ -191,14 +75,9 @@ header nav .nav-items .nav-link {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-
 }
 
-header nav .nav-items .nav-link:hover {
-  color: #404bbf;
-}
-
-header nav .nav-items .nav-link:focus {
+header nav .nav-items .nav-link:hover , .nav-link:focus {
   color: #404bbf;
 }
 
@@ -217,26 +96,23 @@ address .address-list .address-link {
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-address .address-list .address-link:hover {
+address .address-list .address-link:hover , .address-link:focus {
   color: #404bbf;
 }
-address .address-list .address-link:focus {
-  color: #404bbf;
-}
+
 
 /* HEADER */
 
 /* HERO SECTİON */
 .hero-image {
+  padding: 188px 0;
+  max-width: 1440px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2E2F42B2;
-  padding: 188px 0;
-  max-width: 1440px;
-  margin-left: 156px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -272,12 +148,10 @@ address .address-list .address-link:focus {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-image .hero-button:hover {
+.hero-image .hero-button:hover , .hero-button:focus {
   background-color: #404bbf;
 }
-.hero-image .hero-button:focus {
-  background-color: #404bbf;
-}
+
 /* HERO SECTİON */
 
 /* LİST SECTİON */
@@ -369,20 +243,23 @@ section .our-teams {
   align-items: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-section .container .social-icon {
+
+section .container .team-member {
   padding: 32px 0;
-  
 }
-section .container .social-icon .social-media {
+
+section .container .social-media {
   display: flex;
   justify-content: center;
   gap: 24px;
+  font-size: 20px;
+  margin: 8px auto;
 }
-section .container .social-icon .social-media .s-link {
+section .container .social-media .s-link {
   width: 40px;
   height: 40px;
 }
-section .container .social-icon .social-media .s-link .media-link {
+section .container .social-media .s-link .media-link {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -392,20 +269,17 @@ section .container .social-icon .social-media .s-link .media-link {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-section .container .social-icon .social-media .s-link .media-link:hover {
-  background-color: #404bbf;
-}
-section .container .social-icon .social-media .s-link .media-link:focus {
+section .container .social-media .s-link .media-link:hover , .media-link:focus {
   background-color: #404bbf;
 }
 
-section .container .social-icon .social-media .s-link .media-link .team-svg {
+
+section .container .social-media .s-link .media-link .team-svg {
   fill: #f4f4fd;
 }
 
 section .container .our-team-list .our-teams .team-member{
   margin-top: 32px;
-  margin-bottom: -24px;
 }
 
 section .ourteam-header {
@@ -455,10 +329,15 @@ section .container .portfolio-list .portfolio {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 section .container .portfolio-list .portfolio:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  
 }
-
+section .container .portfolio-list .portfolio:hover .img-p{
+  transform: translateY(0%);
+}
 section .container .portfolio-list .img-div {
   position: relative;
   overflow: hidden;
@@ -482,7 +361,6 @@ section .container .portfolio-list .app-div {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 section .portfolio-header {
   font-weight: 500;
@@ -497,9 +375,6 @@ section .portfolio-p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-section .container .portfolio-list .img-div .img-p:hover {
-  transform: translateY(0%);
 }
 
 
@@ -549,12 +424,10 @@ footer .container .social-icon-footer .social-list .social-link a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer .container .social-icon-footer .social-list .social-link .s-link:hover {
+footer .container .social-icon-footer .social-list .social-link .s-link:hover, .s-link:focus {
   background-color: #31d0aa;
 }
-footer .container .social-icon-footer .social-list .social-link .s-link:focus {
-  background-color: #31d0aa;
-}
+
 
 footer .container .social-icon-footer .social-list .social-link .s-link .icon-social {
   fill: #f4f4fd;
